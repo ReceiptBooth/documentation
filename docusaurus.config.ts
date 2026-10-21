@@ -5,31 +5,22 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Receipt Booth',
-  tagline: 'Take a Memory, Print the Moment',
-  favicon: 'img/favicon.ico',
+  title: 'Receipt Booth Help Centre',
+  tagline: 'Set up, run and look after your Receipt Booth.',
+  favicon: 'img/favicon.png',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://docs.receiptbooth.com',
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ReceiptBooth',
+  projectName: 'documentation',
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -41,26 +32,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -69,53 +42,77 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.png',
+    metadata: [
+      {
+        name: 'description',
+        content:
+          'Setup guides, app help, printer and paper tips and troubleshooting for your Receipt Booth.',
+      },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
+      title: 'Help Centre',
       logo: {
-        alt: 'Receipt Booth Logo',
+        alt: 'Receipt Booth',
         src: 'img/logo.png',
+        srcDark: 'img/logo-white.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Guides',
+        },
+        {
+          to: '/docs/troubleshooting',
+          label: 'Troubleshooting',
+          position: 'left',
+        },
+        {
+          to: '/docs/contact-support',
+          label: 'Contact',
+          position: 'left',
+        },
+        {
+          href: 'https://receiptbooth.com/collections/paper',
+          label: 'Buy paper',
+          position: 'right',
         },
         {
           href: 'https://receiptbooth.com',
-          label: 'Website',
+          label: 'receiptbooth.com',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Receipt Booth',
+          title: 'Help',
           items: [
-            {
-              label: 'Website',
-              href: 'https://receiptbooth.com',
-            },
-            {
-              label: 'Contact Support',
-              href: 'https://receiptbooth.com',
-            },
+            {label: 'Getting started', to: '/docs/welcome'},
+            {label: 'Troubleshooting', to: '/docs/troubleshooting'},
+            {label: 'Contact support', to: '/docs/contact-support'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Receipt Booth',
           items: [
-            {
-              label: 'Instagram',
-              href: 'https://www.instagram.com/receiptbooth',
-            },
+            {label: 'Website', href: 'https://receiptbooth.com'},
+            {label: 'Rent a booth', href: 'https://receiptbooth.com/pages/rental'},
+            {label: 'Buy paper', href: 'https://receiptbooth.com/collections/paper'},
+            {label: 'FAQ', href: 'https://receiptbooth.com/pages/faq'},
+          ],
+        },
+        {
+          title: 'Follow',
+          items: [
+            {label: 'Instagram', href: 'https://instagram.com/receiptbooth'},
           ],
         },
       ],

@@ -18,3 +18,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Raw working screenshots (not published)
+/docs/img/screenshots/
+.DS_Store
+._*
