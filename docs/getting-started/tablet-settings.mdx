@@ -10,7 +10,11 @@ description: Stop the Receipt Booth tablet from dimming or switching off during 
 
 The tablet has power-saving features that dim or switch off the screen. Change these three settings once so the booth stays awake for guests.
 
+{/* TODO(boss): replace the step graphics below with real Samsung One UI screenshots from the booth tablet (Galaxy Tab A9 / A11): Settings > Display (Adaptive brightness), Display > Screen timeout, About tablet > Software information > Build number, Developer options > Stay awake. The Android emulator cannot show Samsung's menus, so these graphics show the menu path only. */}
+
 ## 1. Turn off adaptive brightness
+
+![Step 1: Settings, Display, Adaptive brightness, Off](../img/guide/tablet-step-1-brightness.png)
 
 This lets you control the screen brightness yourself.
 
@@ -20,13 +24,22 @@ This lets you control the screen brightness yourself.
 
 ## 2. Increase the screen timeout
 
+![Step 2: Settings, Display, Screen timeout, 10 minutes](../img/guide/tablet-step-2-timeout.png)
+
 1. Open **Settings** → **Display** → **Screen timeout**.
 2. Choose **10 minutes**.
 
 ## 3. Turn on Stay awake while charging
 
+![Step 3: turn on developer mode with Settings, About tablet, Software information, Build number. Then Settings, Developer options, Stay awake, On](../img/guide/tablet-step-3-stay-awake.png)
+
+First, turn on developer mode. You only need to do this once.
+
 1. Open **Settings** → **About tablet** → **Software information**.
 2. Tap **Build number** 7 times in a row until you see "Developer mode has been turned on."
+
+Then switch on Stay awake.
+
 3. Go back to the main **Settings** menu and open **Developer options** (at the very bottom).
 4. Switch on **Stay awake**.
 
