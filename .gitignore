@@ -23,3 +23,6 @@ yarn-error.log*
 /docs/img/screenshots/
 .DS_Store
 ._*
+
+# Local agent notes (never published)
+.claude/
