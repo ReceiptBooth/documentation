@@ -1,4 +1,4 @@
-/* Help centre home, in the booth app's style: ruled rows, one ink button, the 2027 Slip receipt. */
+/* Help centre home, in the booth app's style: ruled rows, one ink button. */
 
 .page {
   max-width: 1200px;
@@ -60,7 +60,6 @@
   padding-top: 80px;
 }
 .h2 { font: 500 28px/36px var(--sans); letter-spacing: -0.01em; margin: 0; }
-.headLine { font: 400 15px/22px var(--sans); color: var(--grey); margin: 8px 0 0; }
 
 /* ruled rows (QuietNavRow) */
 .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink-rule); }
@@ -92,67 +91,6 @@
   stroke-linejoin: round;
 }
 
-/* the slip: a white receipt hanging from an ink slot, on bone */
-.stage {
-  background: var(--bone);
-  border-radius: var(--r-panel);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 32px 56px;
-}
-.slot { width: 100%; max-width: 480px; height: 12px; border-radius: var(--r); background: var(--ink); position: relative; z-index: 2; }
-.slip {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  margin-top: -5px;
-  background: var(--slip);
-  padding: 32px 28px 24px;
-  font: 400 13px/20px var(--mono);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-.slip::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;
-  height: 8px;
-  background:
-    linear-gradient(135deg, var(--slip) 50%, transparent 50%) 0 0 / 12px 8px repeat-x,
-    linear-gradient(-135deg, var(--slip) 50%, transparent 50%) 0 0 / 12px 8px repeat-x;
-}
-.slipLogo { display: block; width: 140px; height: auto; margin: 0 auto; }
-.slipSub { text-align: center; font-size: 10px; letter-spacing: 0.32em; color: var(--grey); margin: 6px 0 0; }
-.dots { border-top: 2px dotted var(--ink); margin: 18px 0 12px; opacity: 0.8; }
-.slipLines { list-style: none; margin: 0; padding: 0; }
-.slipLines li { margin: 0; }
-.ln {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  padding: 6px 0;
-  color: var(--ink);
-  text-decoration: none;
-}
-.ln:hover { color: var(--ink); text-decoration: none; }
-.ln:hover span:first-child { text-decoration: underline; text-underline-offset: 3px; }
-.lead { flex: 1; border-bottom: 1px dotted var(--faint); transform: translateY(-4px); min-width: 12px; }
-.amt { white-space: nowrap; }
-.thanks {
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  color: var(--ink);
-  text-decoration: none;
-  padding: 6px 0 2px;
-}
-.thanks:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
-
 @media (max-width: 996px) {
   .page { padding: 0 16px 64px; }
   .hero { padding: 40px 0 8px; }
@@ -163,7 +101,4 @@
   .h2 { font-size: 24px; line-height: 31px; }
   .row { min-height: 64px; gap: 14px; }
   .value { display: none; }
-  .stage { padding: 24px 12px 36px; }
-  .slip { padding: 26px 16px 20px; font-size: 12px; letter-spacing: 0.04em; }
-  .ln { flex-wrap: wrap; column-gap: 8px; row-gap: 0; }
 }

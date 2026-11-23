@@ -1,6 +1,5 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
@@ -17,15 +16,6 @@ const guides: Row[] = [
   {title: 'Renting a booth', line: 'Collection, delivery, deposit.', to: '/docs/rentals'},
 ];
 
-// Short answers from the guides, printed like a receipt.
-const fixes: {q: string; a: string; to: string}[] = [
-  {q: 'Leave photo mode', a: 'Tap top left 5x', to: '/docs/app/exit-photo-mode'},
-  {q: 'No printers found', a: 'Check power + USB', to: '/docs/app/printer'},
-  {q: 'Lines across prints', a: 'Brighter room', to: '/docs/app/lines-on-prints'},
-  {q: 'Screen dims', a: 'Stay awake on', to: '/docs/running-your-booth/tablet-settings'},
-  {q: 'Prints per roll', a: 'About 200–400', to: '/docs/printer-and-paper/paper-and-reorders'},
-];
-
 function Chevron(): ReactNode {
   return (
     <svg className={styles.chev} viewBox="0 0 24 24" aria-hidden="true">
@@ -35,7 +25,6 @@ function Chevron(): ReactNode {
 }
 
 export default function Home(): ReactNode {
-  const logo = useBaseUrl('/img/logo.svg');
   return (
     <Layout
       title="Help Centre"
@@ -76,38 +65,6 @@ export default function Home(): ReactNode {
               </li>
             ))}
           </ul>
-        </section>
-
-        <section className={styles.split}>
-          <div className={styles.head}>
-            <Heading as="h2" className={styles.h2}>
-              Quick fixes
-            </Heading>
-            <p className={styles.headLine}>Each one opens the full guide.</p>
-          </div>
-          <div className={styles.stage}>
-            <div className={styles.slot} aria-hidden="true" />
-            <div className={styles.slip}>
-              <img className={styles.slipLogo} src={logo} alt="Receipt Booth" width={150} height={26} />
-              <p className={styles.slipSub}>Quick fixes</p>
-              <div className={styles.dots} aria-hidden="true" />
-              <ul className={styles.slipLines}>
-                {fixes.map((f) => (
-                  <li key={f.q}>
-                    <Link className={styles.ln} to={f.to}>
-                      <span>{f.q}</span>
-                      <span className={styles.lead} aria-hidden="true" />
-                      <span className={styles.amt}>{f.a}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className={styles.dots} aria-hidden="true" />
-              <Link className={styles.thanks} to="/docs/contact-support">
-                Still stuck? Contact us
-              </Link>
-            </div>
-          </div>
         </section>
 
         <section className={styles.split}>
