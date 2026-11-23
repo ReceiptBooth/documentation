@@ -11,7 +11,7 @@ type Row = {title: string; line: string; to: string};
 const guides: Row[] = [
   {title: 'Getting started', line: 'Unbox, connect, install the app.', to: '/docs/welcome'},
   {title: 'Running an event', line: 'Checklist, exit photo mode, reprints.', to: '/docs/running-an-event/event-checklist'},
-  {title: 'The app', line: 'Themes, print templates, release notes.', to: '/docs/app'},
+  {title: 'The app', line: 'Themes, print designs, online photos, release notes.', to: '/docs/app'},
   {title: 'Printer and paper', line: 'Test print, refill a roll, reorder.', to: '/docs/app/printer'},
   {title: 'Troubleshooting', line: 'Lines on prints, printer not found.', to: '/docs/troubleshooting'},
   {title: 'Renting a booth', line: 'Collection, delivery, deposit.', to: '/docs/rentals'},
@@ -20,7 +20,7 @@ const guides: Row[] = [
 // Short answers from the guides, printed like a receipt.
 const fixes: {q: string; a: string; to: string}[] = [
   {q: 'Leave photo mode', a: 'Tap top left 5x', to: '/docs/app/exit-photo-mode'},
-  {q: 'No printers found', a: 'Check power + USB', to: '/docs/app/printer'},
+  {q: 'Printer not found', a: 'Check power + USB', to: '/docs/app/printer'},
   {q: 'Lines across prints', a: 'Brighter room', to: '/docs/app/lines-on-prints'},
   {q: 'Screen dims', a: 'Stay awake on', to: '/docs/running-your-booth/tablet-settings'},
   {q: 'Prints per roll', a: 'About 200–400', to: '/docs/printer-and-paper/paper-and-reorders'},

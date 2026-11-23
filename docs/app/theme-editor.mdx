@@ -1,0 +1,87 @@
+---
+title: Theme editor
+sidebar_label: Theme editor
+sidebar_position: 3
+description: Change the screens your guests see in the Receipt Booth app. The camera, review and printing screens, a frame, tap boxes, pictures and text, layers, grid and snap.
+---
+
+# Theme editor
+
+A theme is the look of the guest screens. The theme editor is where you change it.
+
+## Open it
+
+1. Open **Theme** in the menu.
+2. Under **In use**, tap **Edit theme**. To change another theme, tap **Edit** on its row in **My library**.
+
+If the theme in use is a Receipt Booth theme, the app makes your own copy first. The original is never changed. See [Themes from Receipt Booth](./templates.mdx#themes-from-receipt-booth).
+
+{/* TODO(screenshot): the theme editor on a clean theme: top bar, canvas, side panel. Number the parts. */}
+
+## The top bar
+
+1. **Back arrow** — leave the editor.
+2. **Theme name** — tap it to rename. Under it the editor says **Saved** (or **Saving…**). Changes save as you go. If it cannot save it says "Not saved. Check the tablet has free space."
+3. **Camera, Review, Printing** — the screen you are changing. **Printing** shows only with an Instax Polaroid printer. {/* TODO(boss): Instax Polaroid, ships in 1.1? */}
+4. **Undo and Redo** — step back or forward.
+5. **Text** and **Picture** — add words or a picture to the screen.
+6. **Preview** — see the screen as guests see it. Tap **Close preview** to come back.
+7. **Done** — finish. If the theme is not the one in use, the app asks "Use this theme on the booth?" ("Guests will see it the next time the booth starts."). Tap **Use theme**, or **Not now**.
+
+## Which screen guests see
+
+Some steps have two screens. A line under the choice says when guests see each one, and **In use** or **Not in use** says whether your booth shows it now. You can design a screen that is not in use.
+
+- **Camera**
+  - **Square or tall photos** — "Guests see this camera for square and tall photos."
+  - **Wide photos** — "Guests see this camera for print designs with wide photos." With Instax Polaroid it also covers the wide film format.
+- **Review**
+  - **Receipt paper** — "Guests see this review with a receipt printer."
+  - **Instax Polaroid film** — the print on its film card, with Instax Polaroid printers. It shows only on a booth that prints on Instax Polaroid.
+- **Printing** — "Guests see this while their Instax Polaroid photo prints, then where to collect it."
+
+Guests see the screen that matches the photo shape in your print design.
+
+## The side panel
+
+For the screen you chose, the panel on the right has:
+
+- **Background** — a picture behind everything. Choose **Fill the screen** (covers the screen, edges may be cropped) or **Whole picture**. Drag it to move it. Pinch, drag a corner or use **Size** to zoom. Past 100 % the screen edge crops it, as guests see it. **Replace picture** and **Remove background** are here too.
+- **Fill the screen again** — puts the picture back as when you first added it. The app asks first. **Undo** brings your size and place back.
+- **Frame** (on the wide camera) — "A full-screen picture over the camera. Leave its middle see-through." Only what is inside a dashed frame prints.
+- **Text** and **Picture** — tap one on the screen to select it. Drag to move it, drag a corner to resize it. For text: **Words**, **Size**, **Font** (**Sans**, **Serif**, **Mono**), **Bold**, alignment and **Colour**. For **Other colour**, type a code such as #1E1D1C and tap **Apply**. For both: **Bring forward**, **Send backward**, **Straighten**, **Duplicate** and **Delete**.
+- **Print designs** — at the bottom, opens the print designs of this theme.
+
+## Tap boxes
+
+A tap box is the part of the screen that guests press. Your button picture sits on it. The screens have **Capture photo button**, **Retake photo button** and **Print photo button**.
+
+1. Tap a dashed box on the screen.
+2. Under **Button picture**, tap **Choose picture**. **Replace picture** and **Remove picture** change it.
+3. To move it, drag it. Drag a corner to resize it. The camera button "stays beside the camera". The review buttons stay beside the print, clear of the other button and of the drawing tools in the bottom left corner.
+4. **Back to the usual place** puts it where the app puts it when the theme does not move it. A dotted outline on the screen shows that place. The app asks "Move the tap box back?" Tap **Move back**. **Undo** brings your place back.
+
+## Layers: what is in front
+
+The list **On this screen** shows everything on the screen, front at the top, back at the bottom. Hold the handle of a picture or text, then drag up or down to change what is in front. Each row says what it is, for example "Always in front", "Guests can always tap it", "Always at the back", or "Behind all pictures and words". The camera and the guest's photo have fixed places in the list.
+
+When two things overlap the row says "Overlaps another item", and after you drag, the editor tells you the result, for example “Logo” is now in front of “Frame”.
+
+## Grid and Snap
+
+Under the screen are two tick boxes:
+
+- **Grid** — show lines on the screen and snap to them.
+- **Snap** — line up with the screen's edges and middle and with other things.
+
+A dashed line shows while things are lined up. The editor remembers your choice, and the [print design editor](./template-editor.mdx#grid-and-snap) uses the same setting.
+
+## Instax Polaroid screens
+
+{/* TODO(boss): Instax Polaroid, ships in 1.1? Hold this section back with the rest. */}
+
+These show only on a booth set up for [Instax Polaroid](./instax-polaroid.mdx).
+
+- **Review, Instax Polaroid film** — under **Buttons**, put the tap box **Automatic** (under a wide print, beside a tall one), **Under** or **Beside**, and set its **Size**. "Pictures and text sit behind the film card and the buttons."
+- **Printing** — **Background picture**, **Colours** (**Background**, **Words**, **Slot and number**, **Film card**; **Default** resets one) and **Words**: the lines **While printing**, **When ready, several printers** and **When ready, one printer**. In a line, # shows the printer number; **Add printer number** puts it in. Without #, the number goes at the end. "Pictures and text sit behind the print and the words."
+- **Preview with** — under the screen, look at it with a **Wide print** or **Tall print**, with **Printing** or **Ready**, and with 1 to 4 printers. Nothing here is saved. The style of the printing screen is chosen on the [Printer page](./instax-polaroid.mdx#the-printing-screen).

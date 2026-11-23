@@ -3,32 +3,31 @@ title: Printer settings
 sidebar_label: Printer settings
 sidebar_position: 1
 slug: /app/printer
-description: Check that the Receipt Booth printer is connected, run a test print, and fix the No Printers Found message.
+description: Check that the Receipt Booth printer is connected, run a test print, and fix the No receipt printer found message.
 ---
 
 # Printer settings
 
-Use the **Printer** screen to check the printer is connected and to run a test print.
+Check the printer is connected and run a test print.
 
 1. Turn on your Receipt Booth. The printer should switch on automatically. If it does not, flip the hardware switch inside the booth.
 2. The Receipt Booth app should launch automatically once the printer is on.
-3. Open **Printer** in the sidebar. The connected printer is highlighted in blue.
-4. Tap the printer once to see its information.
-5. Tap **Test print** to print your current settings.
+3. Open **Printer** in the menu. At the top, **Receipt paper** (USB receipt printer) should be the one chosen.
+4. Under **USB printer**, your printer is listed with its name. When it is connected, **Connected** is shown beside it.
+5. If it is listed but not connected, the page says "The receipt printer is plugged in but not connected. Tap it, then tap Connect." Tap the printer, then tap **Connect**.
+6. Tap the printer and then **Test print** to print your current settings. The same window has **Disconnect** and **Close**.
 
-## What the Printer screen looks like
+**Home** also shows the printer. A red **!** next to **Printer** means it needs you, and the line under it says what to do, for example "Not connected. Plug in its USB cable."
 
-This is the screen before the printer is connected, so it says **No Printers Found**. Once the printer is on and connected, it appears in the list instead.
+## What the Printer page looks like
 
-![The Printer screen before a printer is connected, with three areas numbered](../img/guide/printer.png)
+{/* TODO(screenshot): Printer page with a real printer connected (Receipt paper chosen, printer row with "Connected"), and the same page with nothing plugged in ("No receipt printer found"). Needs the booth tablet with the printer attached. */}
 
-1. **Printer** — tap it in the sidebar to open this screen.
-2. **No Printers Found** — what you see until the printer is switched on and connected.
-3. **Refresh** — searches for printers again. The app also keeps checking by itself.
+- **Printer type** — **Receipt paper** (USB receipt printer, the booth's own printer) or **Instax Polaroid** (Bluetooth Instax Polaroid printers, needs an access code). See [Instax Polaroid](../app/instax-polaroid.mdx). {/* TODO(boss): Instax Polaroid, ships in 1.1? */}
+- **No receipt printer found** — what you see until the printer is switched on and connected. Under it: "Plug in its USB cable, then tap Refresh."
+- **Refresh** — searches for printers again. The app also keeps checking by itself.
 
-{/* TODO(boss): add a screenshot of the Printer screen with a real printer connected (highlighted in blue, plus the printer info and Test print). Needs the booth tablet with the printer attached; the emulator cannot fake a USB printer. */}
-
-## If it says "No Printers Found"
+## If it says "No receipt printer found"
 
 Check each of these:
 

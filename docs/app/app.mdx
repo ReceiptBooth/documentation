@@ -2,7 +2,7 @@
 title: App overview and updates
 sidebar_label: App overview
 sidebar_position: 1
-description: Tour of the Receipt Booth app settings screen, the Play Store download link and the release notes for every version.
+description: Tour of the Receipt Booth app (Home, menu, Start booth), the Play Store download link and the release notes for every version.
 ---
 
 # App overview and updates
@@ -13,22 +13,60 @@ The app runs the guest photo screen, your print layout and the printer. It is av
 
 ## App overview (tablet, landscape)
 
-A sidebar on the left, your settings on the right. Set up the booth, the print layout and the printer here, then start photo mode.
+When you open the app you see **Home**. The menu is on the left, the page you picked is on the right. Set up the booth, the print design and the printer here, then tap **Start booth**.
 
-![The App Settings screen with six numbered areas](../img/guide/app-settings.png)
+{/* TODO(screenshot): Home, clean content, printer connected, "Ready for guests". Number: 1 menu, 2 Start booth, 3 the five rows, 4 footer (Language, Buy paper rolls, Help, Version). */}
 
-1. **Sidebar** — switch between App Settings, Print Customisation, Booth Customisation and Printer. The page you are on is highlighted.
-2. **Version** — the app version installed on your tablet. Tell us this if you contact support.
-3. **Buy Paper/Sticker Rolls and Official Documentation** — order more paper, or open this help site.
-4. **Camera Permission** — must say **Enabled** for photo mode to work.
-5. **Language** — choose the language the app uses.
-6. **Enter Photo Mode** — starts the guest photo screen. When you are ready for guests, tap this.
+1. **Menu** — **Home**, **Theme**, **Print design**, **Booth** and **Printer**. The page you are on is marked. A red **!** next to a name means something there needs you.
+2. **Start booth** — starts the guest photo screen. If something is not ready, the app tells you what and asks first. Tap **Start anyway** to go on, or **Cancel**.
+3. **Home rows** — **Theme**, **Print design**, **Printer**, **Camera** and **Online photos**. Tap a row to open it. Under the title, **Ready for guests** means all is well. **Camera** must say **Allowed**. If it says **Not allowed**, tap **Allow camera**.
+4. **Language** — the language the app uses. The app is available in 23 languages. See [Languages](#languages).
+5. **Buy paper rolls** and **Help** — order more paper, or open this help site.
+6. **Version** — the app version on your tablet, at the bottom of Home. Tell us this if you contact support.
 
-## Upcoming features
-1. 4-cut photo prints
-2. GIFs and scannable QR codes
+Each page in short:
 
---- 
+- **Theme** — the look of the guest screens. See [Interface and print templates](./templates.mdx) and [Theme editor](./theme-editor.mdx).
+- **Print design** — what is printed, and how the photo is processed. See [Interface and print templates](./templates.mdx) and [Print design editor](./template-editor.mdx).
+- **Booth** — what guests do, sounds, saving, and [Online photos](./online-photos.mdx).
+- **Printer** — which printer the booth uses. See [Printer settings](../printer-and-paper/printer-settings.mdx).
+
+### Start booth: when the app asks first
+
+Before it starts, the app checks the booth. If something is wrong it says what, and the one thing to do:
+
+- **The receipt printer isn't connected.** Plug in its USB cable.
+- **No theme is chosen.** Open Theme and choose one.
+- **The booth isn't allowed to use the camera.** Tap Allow camera on Home.
+- **No Instax Polaroid printer has been added.** Open Printer and add one. {/* TODO(boss): Instax Polaroid, ships in 1.1? */}
+
+If more than one thing is wrong, the title says how many (for example "2 things aren't ready") and each is listed with its step. Tap **Cancel** to fix it, or **Start anyway**. For the Online photos questions, see [Online photos](./online-photos.mdx#when-the-app-asks-before-start-booth).
+
+### Languages
+
+The app speaks 23 languages: English, 日本語, 한국어, 简体中文, 繁體中文, Tiếng Việt, ไทย, Bahasa Melayu, Bahasa Indonesia, Filipino, हिन्दी, Español, Français, Deutsch, Italiano, Português (Brasil), Nederlands, Türkçe, Polski, Svenska, Dansk, Norsk bokmål and Suomi. Pick one with **Language** on Home. The guest screens follow it too. {/* TODO(boss): have the 22 translations been checked by a native speaker? Say so here, or not. */}
+
+{/* TODO(boss): old "Upcoming features" list (4-cut photo prints, GIFs and scannable QR codes) is now in 1.1. Add a new list here only if you want one. */}
+
+---
+
+## v1.1
+
+{/* TODO(boss): release date, and "This is a free update for all booth owners." (the older versions say it). Nothing here is announced yet. */}
+
+### What's new in 1.1
+
+1. [Online photos](./online-photos.mdx) — guests scan a QR code on the booth screen and get their photo and a short countdown clip on their phone. You can print a QR code on the receipt too, and choose its style.
+2. A new look for the settings — **Home**, **Theme**, **Print design**, **Booth** and **Printer**, with **Start booth** at the bottom of the menu. The app asks before it starts if something is not ready.
+3. Photo layouts — one photo, two or three stacked, a photo strip, or four in a grid. See [Print design editor](./template-editor.mdx#photo-layout).
+4. Photo thumbnails — with more than one photo, guests see each photo appear as it is taken. Switch it off under **Booth**, **Guest steps**.
+5. Pictures and text in front of or behind the photos, a **Grid** and **Snap** to line things up, and **Reset design** with a question first. See [Print design editor](./template-editor.mdx).
+6. A new theme editor — **Camera**, **Review** and **Printing** screens, **Frame**, movable tap boxes, and layers. See [Theme editor](./theme-editor.mdx).
+7. Your theme library — themes from Receipt Booth are copied to **My library** and your changes never touch the original. Use **Get the original again** for a fresh copy.
+8. Extra copies moved into **Booth**, **Guest steps**. See [Reprint photos](../running-an-event/reprint-photos.mdx).
+9. Clearer messages — what is wrong and what to do, on Home, at **Start booth** and on the Printer page. A paper-out message for the receipt printer.
+10. 23 languages.
+11. [Instax Polaroid](./instax-polaroid.mdx) — print on Instax Polaroid film with Bluetooth printers. Needs an access code. {/* TODO(boss): Instax Polaroid, ships in 1.1? To hold it back, delete this line and see the README. */}
 
 ## v1.0.5 (October 22, 2026)
 

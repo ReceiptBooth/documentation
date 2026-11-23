@@ -11,12 +11,12 @@ Each fix links to the full guide. Still stuck? [Contact support](./contact-suppo
 
 ## The printer is not connecting
 
-The app shows **No Printers Found**, or nothing prints.
+The app shows **No receipt printer found**, or nothing prints. On **Home**, **Printer** has a red **!**.
 
 1. Check the printer is switched on. If it is not, flip the hardware switch inside the booth marked **I** and **O**.
 2. Check the black USB data cable runs from the printer to the bottom of the tablet connector.
 3. Check the tablet is charging through the tablet connector. The tablet must be charging and connected to the printer at the same time.
-4. Open **Printer** in the app and look for the printer highlighted in blue, then tap **Test print**.
+4. Open **Printer** in the app. Your printer should be listed with **Connected** beside it. If it is listed but not connected, tap it, then tap **Connect**. Then tap the printer again and tap **Test print**.
 
 Full guide: [Printer settings](./printer-and-paper/printer-settings.mdx) and [Unboxing and setup](./getting-started/unboxing-and-setup.mdx).
 
@@ -25,8 +25,8 @@ Full guide: [Printer settings](./printer-and-paper/printer-settings.mdx) and [Un
 Usually caused by a dim room.
 
 1. Move the booth to a brighter area.
-2. Increase **Brightness Control** in **Print Customisation** (up to 200%).
-3. Try a different **Image Smoothing** option.
+2. Increase **Brightness** in **Print design**, on the **Photo** tab (up to 200%).
+3. Try a different **Image smoothing** option.
 
 Full guide: [Lines on prints](./printer-and-paper/lines-on-prints.mdx).
 
@@ -44,7 +44,17 @@ Full guide: [Refilling paper](./printer-and-paper/refilling-paper.mdx).
 
 ## The booth ran out of paper
 
-The app does not warn you yet when paper runs out. Load a new roll, then run a **Test print**. Keep a spare roll on hand, and see [Paper and reorders](./printer-and-paper/paper-and-reorders.mdx) to plan how many you need.
+The app does not show how much paper is left. When a print is attempted with no paper, the app says "The receipt printer is out of paper. Put in a new roll." and the guest screen says "The print could not be made." Load a new roll, then run a **Test print**. Keep a spare roll on hand, and see [Paper and reorders](./printer-and-paper/paper-and-reorders.mdx) to plan how many you need.
+
+## Start booth asks a question first
+
+The app checks the booth before it starts and says what is wrong and the one thing to do, for example "The receipt printer isn't connected. Plug in its USB cable." Fix it, or tap **Start anyway**. See [App overview](./app/app.mdx#start-booth-when-the-app-asks-first).
+
+## Instax Polaroid will not print
+
+{/* TODO(boss): Instax Polaroid, ships in 1.1? */}
+
+Open **Printer**. Tap the printer to see what it says: no film, film door open, battery low, not found. Tap **Check again**, then **Print test card**. Photos upside down? Switch on **Turn prints upside down** under **Troubleshooting**. Full guide: [Instax Polaroid](./app/instax-polaroid.mdx).
 
 ## I cannot exit photo mode
 
@@ -56,10 +66,18 @@ Full guide: [Exit photo mode](./running-an-event/exit-photo-mode.mdx).
 
 ## Reprints: extra copies or the reprint prompt
 
-- To let guests print extra copies, switch on **Multiple print** (**Enable**) in **Booth Customisation**.
-- If the extra-copies screen stays up because guests forget to close it, switch on **Auto-dismiss dialog** and set **Auto-dismiss after** in the same place.
+- To let guests print extra copies, open **Booth**, tap **Extra copies** and switch **Extra copies** on.
+- If the extra-copies screen stays up because guests forget to close it, switch on **Close by itself** and set **Close after** in the same place.
 
 Full guide: [Reprint photos](./running-an-event/reprint-photos.mdx).
+
+## Online photos: no QR code, or the guest sees "Your photo is on its way"
+
+- No QR code after **Print**: open **Booth**, **Saving** and switch **Online photos (QR)** on.
+- "Your photo is on its way": the photo has not gone up yet. Check the **Online photos** line on **Home** and that the tablet has internet. It goes up by itself when the internet is back.
+- Home says **1 needs attention**: open the list and tap **Try again**.
+
+Full guide: [Online photos](./app/online-photos.mdx#troubleshooting).
 
 ## The tablet screen dims or switches off
 

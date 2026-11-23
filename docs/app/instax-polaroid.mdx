@@ -1,0 +1,150 @@
+---
+title: Instax Polaroid
+sidebar_label: Instax Polaroid
+sidebar_position: 6
+description: Print on Instax Polaroid film from your Receipt Booth app. Activate with an access code, add Bluetooth printers, choose film layouts, set the logo strip and fix problems.
+---
+
+{/*
+TODO(boss): ships in 1.1? This whole page is Instax Polaroid. It is written from the 1.1 app, which needs an access code to switch it on.
+To hold it back: delete this file, delete the "Instax Polaroid" line in docs/app/app.mdx (What's new), and remove the other
+comments marked "TODO(boss): Instax Polaroid" (they sit next to a link or a short section). The README of this work lists each place.
+*/}
+
+# Instax Polaroid
+
+With Instax Polaroid the booth prints on instant film, with Bluetooth printers, instead of receipt paper. You choose one or the other on the **Printer** page. It needs an access code.
+
+{/* TODO(boss): which printers do we name? business/company.md says "Fujifilm instax Link WIDE 2" only. The app also reads other Link models. Add the printer line here once confirmed. */}
+
+Instax Polaroid is our name for this feature. We are not affiliated with Fujifilm or Polaroid. {/* TODO(boss): the disclaimer wording may need a legal check (business/company.md). */}
+
+## Activate it
+
+Until it is activated, the booth prints receipts. Receipt printing is never locked.
+
+1. Open **Printer** in the menu. Under **Printer type** there are two choices, **Receipt paper** and **Instax Polaroid**. Instax Polaroid shows a lock until it is activated. Tap it.
+2. The page says **Activate Instax Polaroid**: "Scan the QR code on your access card. Until then, this booth prints receipts."
+3. Tap **Scan the card** and hold the card's QR code inside the frame. Hold it still and flat. Try a little closer or further away.
+4. Or tap **Enter the code instead**. "Type the code from your access card or order email." The code looks like RB-XXXX-XXXX-XXXX. Codes never use O, 0, I, 1 or L. Tap **Activate**.
+
+The tablet needs the internet once to activate: "Connect this tablet to Wi-Fi once to activate. A phone hotspot is enough."
+
+When it works, the page says **Instax Polaroid activated**, with the order number and, for a rental, "Ends" and a date. For a rental in its last days, Home says when Instax Polaroid ends.
+
+{/* TODO(screenshot): Printer page, Instax Polaroid chosen but not activated ("Activate Instax Polaroid", Scan the card, Enter the code instead). */}
+
+One code works on one booth at a time. To move it, tap **Deactivate on this booth** and confirm. "Instax Polaroid printing stops on this booth, and the code can then be used on another booth." This needs the internet for a moment.
+
+### If activation does not work
+
+| The app says | What to do |
+|---|---|
+| That code has a typo. Check each character against the card. | Type it again, or scan the card. |
+| That code isn't recognised. Check the card or your order email. | Check the code against the card. |
+| This code is already active on another booth. Deactivate it on that booth first. | Deactivate it there. If that tablet is lost or broken, contact us and we'll move the code. |
+| This code has been switched off. | Contact us if this is a mistake. |
+| This code's rental period has ended. | Contact us to extend it. |
+| Too many tries. Wait an hour, then try again. | Wait, then try again. |
+| The activation service can't be reached right now. | Try again in a few minutes. |
+| This version of the app can't confirm the activation. | Update the app, then try again. |
+| That isn't a Receipt Booth card. | Scan the access card, or type the code. |
+| The camera can't start right now. Enter the code instead. | Type the code. |
+
+Contact us at receiptbooth@gmail.com. If a booth's code is switched off, moved or ended, the Printer page says so and the booth prints receipts until you activate again.
+
+## Add printers
+
+Once activated, the **Printer** page shows **Printers**. You can add up to 4.
+
+1. Switch on your Instax Polaroid printer and keep it close to the tablet.
+2. Tap **Add printer**. The window **Add a printer** says "Looking for printers nearby…".
+3. Tap **Add** next to your printer. It says **Added**. Tap **Done**.
+
+If nothing shows ("No printers found"), "Make sure the printer is switched on and close to the tablet." and tap **Search again**.
+
+Instax Polaroid printers connect over Bluetooth. If the page says **Bluetooth isn't allowed**, tap **Allow**. If it says **Bluetooth is off**, tap **Turn on Bluetooth**.
+
+{/* TODO(screenshot): Printer page, Instax Polaroid activated, with two printers added: Film and Battery columns, the Add printer row. */}
+
+Each printer has a number. "Printer 1 prints first. If it can't, the next one takes over." Tap a printer to open it:
+
+- It says **Ready**, or what is wrong: "Out of film. Load a new pack." / "Film door is open. Close it." / "Battery too low. Charge it." / "Busy. Try again in a moment." / "Printer fault. Check it for a film jam." / "Not found. Switch it on and bring it close to the tablet." / "Can't connect. Switch it off and on, then check again."
+- **Film** shows how many prints are left ("3 left", or **None**). **Battery** shows the charge, or **Charging**.
+- **Check again** reads the printer again. **Check again** at the bottom of the list checks all of them.
+- **Print test card** prints a test card from that printer ("Printing test card…"). Use it before an event.
+- **Move up** moves it earlier in the order. **Remove** asks "Remove printer 2?" and says "You can add it again later."
+
+Under the printers, **Troubleshooting** ("Test switches and printer readings") has:
+
+- **Turn prints upside down** — "Use if photos come out upside down."
+- **Skip the battery check** — "Only if a charged printer is reported as low."
+- **Printer readings** — "Check a printer to see its readings."
+
+## Film layouts
+
+Instax Polaroid prints use their own print designs. Edit them in the [print design editor](./template-editor.mdx#film-designs). The **Layout** choices are:
+
+| Layout | Shape |
+|---|---|
+| **One photo** | Landscape |
+| **One photo** | Portrait |
+| **Two photos** | Landscape, side by side |
+| **Three photos** | Portrait, one large and two small |
+| **Four photos** | Portrait, two by two |
+
+Your receipt designs are kept. Under **Print design**, **Receipt print designs** ("Used when the printer is set to receipt paper") opens them.
+
+## Print design with Instax Polaroid
+
+Open **Print design**. The page has no tabs. It shows:
+
+- **In use** — the design guests get, with **Edit design**, and **All print designs**.
+- **Strip** — **Logo and text strip**, see below.
+- **Photo** — **Mirror photos**.
+- **Receipt paper** — **Receipt print designs**.
+
+Brightness and image smoothing are for receipt paper only and do not show here.
+
+### Logo and text strip
+
+"A thin white strip on every print, for a logo or a line of text." Open **Logo and text strip**.
+
+1. Switch **Print the strip** on.
+2. Under **On the strip**, choose what goes **Left**, **Centre** and **Right**: **Nothing**, **Receipt Booth logo**, **Text**, **Picture**, **Date**, **Time** or **Date and time**.
+3. For text, type one line ("Type one line of text"), then set **Text size** (**Regular** or **Small**) and **Bold text**. For a picture, tap **Change picture**.
+4. For portrait prints, **Portrait prints** puts the strip **Along the thick border** ("Text runs up the side") or **Along the bottom** ("Reads normally").
+
+"Text that is too long for its place is cut short. Pictures are made smaller to fit." The preview says "As it prints". The date and time are those of the moment the photo is printed.
+
+{/* TODO(screenshot): the Logo and text strip page with a text on the left and the logo on the right. */}
+
+## The printing screen
+
+While a photo prints, guests see the **Printing** screen, then where to collect it. Choose its look on the **Printer** page, under **Guest screen while printing**. Tap **See it play** to watch it.
+
+- **Photo card** — "The print, in the middle."
+- **Printer slots** — "Points to the right slot."
+- **Full photo** — "The photo fills the screen."
+
+Guests read "Printing your photo", then "Collect it from printer 2." (with several printers) or "Collect it from the printer." You can change the colours and words in the [theme editor](./theme-editor.mdx#instax-polaroid-screens).
+
+## What guests see if it fails
+
+The guest screen says "Sorry, the photo could not be printed" and why, with **Try again** and **Cancel**:
+
+- There is no film left. Please ask a member of staff.
+- The film door is open. Please ask a member of staff.
+- The printer battery is too low. Please ask a member of staff.
+- The printer is busy. Please wait a moment and try again.
+- The printer has a fault, such as a film jam. Please ask a member of staff.
+- The printer was not found. Please check it is switched on and close to the tablet.
+- The photo could not be sent to the printer. Please try again.
+
+Other messages: "No Instax Polaroid printer has been set up. Please ask a member of staff." / "Bluetooth permission is missing. Please ask a member of staff." / "Bluetooth is switched off. Please ask a member of staff." / "This printer isn't ready yet. Please ask a member of staff."
+
+## Home and Start booth
+
+On **Home**, the **Printer** row says **Instax Polaroid** and how many printers are added ("2 printers added"). With none added, a red **!** and "No Instax Polaroid printer has been added. Open Printer and add one." **Buy paper rolls** is hidden while the booth prints on film.
+
+If a rental has ended the page says "The Instax Polaroid rental has ended, so this booth prints receipts. Contact us to extend it."
