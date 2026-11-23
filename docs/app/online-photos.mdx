@@ -20,11 +20,15 @@ Online photos arrive with app version 1.1. If your **Version** (bottom of the Ho
 
 The guest scans the code on the booth screen and a page opens at **photos.receiptbooth.com**.
 
-{/* TODO(screenshot): needs the real tablet and a real phone (scan the code from a real session, no mock-ups): the guest page on the phone: photo, Save photo, Share, clip, Save as GIF, Save as video, Online until. The mock-ups from 22 Nov are not used. */}
+![The guest page on a phone: the photo, then the Save photo button](../img/online-photos/phone-photo-page.png)
 
-- **The photo.** Tap **Save photo** to keep it on the phone, or **Share** to send it to friends.
-- **A short clip of the countdown.** Tap **Save as GIF** or **Save as video**.
-- **The date it is online until.** Shown at the bottom of the page as **Online until** and a date.
+The picture shows the top of the page. Below it come the clip, **Save as GIF**, **Save as video** and the **Online until** date.
+
+{/* TODO(screenshot): needs the real tablet and a real phone: the guest page with a real countdown clip (the clip area in the test picture was left out because it showed the emulator's test pattern). Use a photo whose guests agreed to be shown. */}
+
+- **The photo.** Tap **Save photo** to keep it on the phone. {/* TODO(boss): a Share button was in the 1.1 draft but does not show in a desktop-style mobile browser test; confirm with engineering whether and where the page offers Share before saying so. */}
+- **A short clip of the countdown**, under the heading **Countdown clip**. Tap **Save as GIF** or **Save as video**. The page says "GIF plays in any chat. Video is for Instagram Stories."
+- **The date it is online until.** Shown at the bottom of the page as **Online until** and a date, for example "Online until 23 December 2026".
 
 The page follows the language of the guest's phone. It carries the Receipt Booth logo only, not your own logo.
 
@@ -117,7 +121,7 @@ Tap **Turn on Online photos** to switch it on, or **Start anyway** to carry on w
 
 ## No internet at the venue
 
-{/* TODO(screenshot): needs the real tablet, with the internet off: Home showing "2 waiting for internet", the Online photos list with "Waiting for internet", the start check "No internet. Photos will go online later.", and the guest screen "Scan now, your photo will arrive later". */}
+{/* TODO(screenshot): needs the real tablet: Home with "needs attention" in red, and the list with Need attention and Try again. */}
 
 Online photos need internet only to send the photo and clip up. Taking and printing do not wait for it: the photo is saved on the tablet first and sent afterwards.
 
@@ -126,15 +130,27 @@ Online photos need internet only to send the photo and clip up. Taking and print
 - If a guest scans while the photo has not gone up yet, the page says **Your photo is on its way**, shows "It appears here by itself as soon as the booth sends it.", and adds "Keep this page, or take a screenshot to come back later." The photo appears by itself when it arrives.
 - The booth screen changes the line under the code to **Scan now, your photo will arrive later**.
 
+![The booth screen with no internet: the QR code and "Scan now, your photo will arrive later"](../img/online-photos/guest-printing-no-internet.png)
+
 **When you tap Start booth with no internet** (and Online photos on), the app asks first. It says **No internet. Photos will go online later.** and "Guests can still scan the code. Their photo goes online when the tablet has internet." Tap **Start anyway** to carry on, or **Cancel**.
 
-On **Home**, the **Online photos** line says how many photos are waiting, for example **2 waiting for internet**. In the list, they sit under **Waiting for internet** with the line "They go online by themselves when the tablet has internet." Once the tablet has internet again the heading changes to **Going online** and the line to "They go online by themselves in a moment."
+![The question when there is no internet: No internet. Photos will go online later.](../img/online-photos/start-check-no-internet.png)
+
+On **Home**, the **Online photos** line says how many photos are waiting, for example **1 waiting for internet**.
+
+![Home with "1 waiting for internet" on the Online photos line](../img/online-photos/home-waiting-for-internet.png)
+
+In the list, they sit under **Waiting for internet** with the line "They go online by themselves when the tablet has internet." 
+
+![The Online photos list with Waiting for internet](../img/online-photos/online-photos-waiting-for-internet.png)
+
+Once the tablet has internet again the heading changes to **Going online** and the line to "They go online by themselves in a moment."
 
 The 30 days start when the photo goes up, not when it was taken, so a late photo still gets its full time.
 
 The booth tries again by itself and spaces its attempts out, so it does not flood a weak connection. Photos that are waiting for internet are not dropped.
 
-{/* TODO(boss): the "No internet" section is written from how the app is built; not yet tried on a tablet with the internet switched off. */}
+{/* TODO(boss): the pictures in this section come from an emulator with its internet switched off; the wording of the rest is from how the app is built, not yet tried on a real tablet. */}
 
 **If you use a phone hotspot**, the photo and clip use some mobile data for every session. In one test a session sent a little over 1 MB (the photo about 0.5 MB, the GIF about 0.15 MB, the video about 0.6 MB). Plan for about 2 MB per session. This comes from one test with one print design: a longer design or a busy clip can be bigger.
 
@@ -148,7 +164,7 @@ With Online photos in play, **Start booth** can ask one more thing first. It ask
 ## See and remove online photos
 
 1. On **Home**, tap **Online photos**.
-2. The list says **Each photo stays online for 30 days.** Each row shows the time it was taken, for example **Today, 17:39**, and **Online until** a date. Photos are grouped under **Online**, with the number beside it.
+2. The list says **Each photo stays online for 30 days.** Each row shows the time it was taken, for example **Today, 7:13 PM** (the time follows the tablet's clock format), and **Online until** a date. Photos are grouped under **Online**, with the number beside it.
 
 ![The Online photos list, with an Online until date on every row](../img/online-photos/online-photos-list.png)
 
@@ -165,6 +181,8 @@ The app asks you to confirm, for example **Remove this photo from the internet?*
 ![Confirmation: Remove every photo from the internet? with Cancel and Remove](../img/online-photos/remove-confirm.png)
 
 The box says "Removed photos can no longer be opened from their links. This cannot be undone." Tap **Remove** to go ahead or **Cancel** to stop. The app then says **Removed.** After removal, the link shows **This photo is no longer online** and "It has been removed."
+
+![The guest page after the photo was removed: This photo is no longer online, It has been removed.](../img/online-photos/phone-photo-removed.png)
 
 Removing needs internet. With no connection the app says "The tablet has no internet. Nothing was removed. Try again when it has internet." If something else goes wrong it says "Could not remove. Try again."
 
