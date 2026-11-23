@@ -47,18 +47,22 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Setup guides, app help, printer and paper tips and troubleshooting for your Receipt Booth.',
+          'Setup, app, printer, paper and troubleshooting guides for your Receipt Booth.',
       },
     ],
+    // Dark mode is off: the booth app has one paper-and-ink palette and no dark theme.
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Help Centre',
       logo: {
         alt: 'Receipt Booth',
-        src: 'img/logo.png',
-        srcDark: 'img/logo-white.png',
+        src: 'img/logo.svg',
+        width: 120,
+        height: 21,
       },
       items: [
         {
@@ -116,11 +120,10 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Receipt Booth. Designed and manufactured in Singapore.`,
+      copyright: `© ${new Date().getFullYear()} Receipt Booth. Designed and manufactured in Singapore.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneLight,
     },
   } satisfies Preset.ThemeConfig,
 };
