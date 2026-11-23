@@ -24,9 +24,9 @@ The guest scans the code on the booth screen and a page opens at **photos.receip
 
 The picture shows the top of the page. Below it come the clip, **Save as GIF**, **Save as video** and the **Online until** date.
 
-{/* TODO(screenshot): needs the real tablet and a real phone: the guest page with a real countdown clip (the clip area in the test picture was left out because it showed the emulator's test pattern). Use a photo whose guests agreed to be shown. */}
+{/* TODO(screenshot): a phone picture that also shows the countdown clip, from an event photo and clip the boss has approved for the help site. The picture above stops above the clip. */}
 
-- **The photo.** Tap **Save photo** to keep it on the phone. {/* TODO(boss): a Share button was in the 1.1 draft but does not show in a desktop-style mobile browser test; confirm with engineering whether and where the page offers Share before saying so. */}
+- **The photo.** Tap **Save photo** to keep it on the phone. Next to it is **Share**: it sends the photo itself where the phone can share files, and otherwise the link. If the guest's browser cannot share, there is no **Share** button. Inside Instagram, WeChat and similar apps the page looks different. See [Troubleshooting](#troubleshooting).
 - **A short clip of the countdown**, under the heading **Countdown clip**. Tap **Save as GIF** or **Save as video**. The page says "GIF plays in any chat. Video is for Instagram Stories."
 - **The date it is online until.** Shown at the bottom of the page as **Online until** and a date, for example "Online until 23 December 2026".
 
@@ -121,8 +121,6 @@ Tap **Turn on Online photos** to switch it on, or **Start anyway** to carry on w
 
 ## No internet at the venue
 
-{/* TODO(screenshot): needs the real tablet: Home with "needs attention" in red, and the list with Need attention and Try again. */}
-
 Online photos need internet only to send the photo and clip up. Taking and printing do not wait for it: the photo is saved on the tablet first and sent afterwards.
 
 - Photos wait on the tablet. They go up by themselves when the internet is back. You do not need to do anything.
@@ -196,6 +194,10 @@ A client asks for a photo to come down at an event? Open the list and remove it 
 
 If a photo cannot go online, it moves to the top of the list under **Need attention**, with the count beside it. Home shows the same count in red, for example **1 needs attention**. Each such row says "Could not go online." and has a **Try again** button. Above the rows, **Try all again** tries every one of them. A photo gets here when the service refuses it, or when it has kept failing for about a week with a connection. It stays on the tablet until you try again or remove it.
 
+![Home, with the Online photos row reading "1 needs attention" in red](../img/online-photos/home-needs-attention.png)
+
+![The Online photos list: Need attention with Try all again, the photo marked "Could not go online." with Try again, and the earlier photo under Online](../img/online-photos/online-photos-list-needs-attention.png)
+
 If **Try again** does not help, [contact support](../contact-support.mdx) and tell us your app **Version**.
 
 ## How long photos stay online
@@ -217,7 +219,7 @@ Tell guests to save their photo soon after the event. Once a photo is saved to t
 
 **The QR code is not on the print.** Check that **Online photos (QR)** is on, and that your print design has a **QR code** in it.
 
-**A guest cannot save the photo.** If the guest opened the link inside another app (WeChat, Instagram, LINE, Facebook, TikTok, KakaoTalk or Snapchat), the page shows the photo with the line "Press and hold the photo to save it." instead of the **Save photo** button, and under the clip "Press and hold the clip to save it as a GIF." For the video it says "For the video, tap ··· at the top and open this page in your browser." So: press and hold the photo, then choose to save it.
+**A guest cannot save the photo.** If the guest opened the link inside another app (WeChat, Instagram, LINE, Facebook, TikTok, KakaoTalk or Snapchat), the page shows the photo with the line "Press and hold the photo to save it." instead of the **Save photo** and **Share** buttons, and under the clip "Press and hold the clip to save it as a GIF." For the video it says "For the video, tap ··· at the top and open this page in your browser." So: press and hold the photo, then choose to save it.
 
 **The guest sees "This photo is no longer online."** Either 30 days have passed, or the photo was removed from the list. We cannot bring it back.
 
